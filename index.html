@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HighTechLowLife</title>
+	<style>
+		body {
+			width: 100vw;
+			height: 100vh;
+			background: black; /* For browsers that do not support gradients */
+		  background: -webkit-linear-gradient(right bottom, black , #181818); /* For Safari 5.1 to 6.0 */
+		  background: -o-linear-gradient(top left, black, #181818); /* For Opera 11.1 to 12.0 */
+		  background: -moz-linear-gradient(top left, black, #181818); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to left top, black , #181818); /* Standard syntax */
+		}
+		.large-header {
+      position: relative;
+      width: 100%;
+      background: center center #333;
+      overflow: hidden;
+      background-size: cover;
+      z-index: 1;
+      text-align: center;
+      background-image: url(img/background.jpg);
+		}
+	</style>
+</head>
+<body>
+<div class="demo-1">
+	<div class="content" style='display: none;'>
+		<div id="large-header" class="large-header">
+			<canvas id="demo-canvas"></canvas>
+			<div class="main-title unselectable">
+				<img id="logo" class='w3-circle w3-hover-opacity w3-card-24'src="img/1.png" onClick="location.assign('/board/forums/');" style='display:none; max-width: 85%;'>
+			</div>
+			<div class="text" id="text" style='display: none;'>
+				<p><i>"You must try harder!"</i> <b>~Offensive Security</b></p>
+				<p><i>"Security without liberty is called prison."</i> <b>~Benjamin Franklin</b></p>
+				<p><i>"The quieter you become, the more you are able to hear."</i> <b>~Richard Alpert</b></p>
+				<p><i>"The generation of random numbers is too important to be left to chance."</i> <b>~Robert R. Coveyou</b></p>
+			</div>
+		</div>
+	</div>
+</div><!-- /container -->
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/full.css">
+	<script src="js/full.min.js"></script>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.content').fadeIn('fast');
+			$('#logo').fadeIn('slow');
+			$('#text').fadeIn(1000);
+		});
+	</script>
+</body>
+</html>
